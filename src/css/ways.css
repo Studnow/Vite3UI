@@ -1,0 +1,25 @@
+.ways {
+  @apply relative min-h-max flex flex-col gap-8 py-14 px-4;
+}
+.ways-cards {
+  @apply flex flex-wrap justify-center gap-8;
+}
+.ways-card {
+  @apply card md:w-32 md:h-32 lg:w-40 lg:h-40 bg-base-200 shadow-md hover:shadow-inner bg-opacity-80 transition-all;
+}
+.ways-card__link {
+  @apply flex flex-col h-full justify-center gap-4 items-center p-4;
+  /* transform: translate(50%, 50%); */
+}
+.arrow-img {
+  @apply text-gray-400 stroke-gray-400;
+}
+.money-img {
+  @apply w-14 md:w-28;
+}
+.ways-card__link:hover .money-img{
+ @apply scale-110 transition-all;
+}
+.ways-card__link:hover .arrow-img{
+ @apply scale-150 translate-x-8 md:translate-x-12 lg:translate-x-16 transition-all text-accent stroke-accent ;
+}

@@ -1,0 +1,16 @@
+.faq {
+  @apply flex flex-col bg-base-200 py-8 px-4;
+}
+.faq-cards {
+  @apply flex flex-col gap-2 py-8;
+}
+.collapse-card {
+  @apply max-w-screen-xl mx-auto px-4 rounded-2xl bg-base-100;
+}
+.collapse-card:focus {
+  background: linear-gradient(90deg, rgba(255,200,62,1) 0%, rgba(255,200,62,1) 0%, rgba(255,115,71,1) 100%);
+  @apply text-accent-content;
+}
+.content-size {
+  @apply md:pr-32;
+}

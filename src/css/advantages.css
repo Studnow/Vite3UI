@@ -1,0 +1,47 @@
+.advantages {
+  @apply flex flex-col gap-8 bg-base-200 px-4 py-16 items-center;
+}
+
+.block-title {
+}
+.avatar-cards {
+  @apply flex justify-between md:gap-4 lg:gap-14 max-w-screen-xl;
+}
+.avatar-card {
+  @apply card shadow-lg border-t-2 bg-base-100;
+}
+.avatar-card__body {
+  @apply card-body gap-8;
+}
+.avatar {
+  @apply flex flex-col-reverse gap-4;
+}
+
+.avatar-image {
+  @apply h-24 w-24 rounded-full;
+}
+
+.geography {
+  @apply flex w-32 justify-between;
+}
+
+.avatar-text {
+}
+
+.avatar-rating {
+}
+
+.rating {
+}
+
+.mask {
+}
+
+.mask-star {
+}
+
+.bg-accent {
+}
+.actions {
+  @apply flex flex-col md:flex-row justify-center gap-4;
+}

@@ -1,0 +1,80 @@
+.header
+  background-image: url(../assets/img/hero/Hero-clear.jpg)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  @apply w-full min-h-[810px] relative flex flex-col justify-center px-4
+  &__content
+    @apply container mx-auto grid lg:grid-flow-col text-base-100 grow max-w-screen-xl lg:py-16 mt-4 sm:mt-0
+  &-img
+    left: 51%
+    top: 56.5%
+    transform: translate(-50%, -50%)
+    @apply absolute z-10 hidden md:block
+
+.navbar-top
+  @apply navbar px-0
+  // &-start
+.navbar-sizing
+  @apply justify-evenly max-w-screen-xl mx-auto
+
+.logo-link
+  @apply btn btn-ghost normal-case text-xl items-center
+  &__icon
+    @apply sm:w-40
+
+.navbar-center
+
+  &-visibility
+    @apply hidden lg:flex
+
+.burger
+  @apply btn btn-ghost lg:hidden
+  &__icon
+    @apply h-5 w-5
+.mobile-menu
+  @apply menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-accent text-base-100
+
+.header-text
+  @apply flex flex-col justify-evenly items-start h-[90%]
+
+.left-text
+  @apply w-full lg:w-4/6 lg:max-w-lg lg:justify-self-start md:justify-self-center px-4
+  &__top
+    @apply flex flex-col w-full lg:max-w-md lg:items-start
+.content-top
+  @apply relative pl-16 py-2 pr-3 bg-base-100 rounded-xl text-neutral font-medium md:text-xl lg:text-2xl text-right max-w-sm self-center lg:self-start
+  &__img
+    @apply absolute left-0 sm:left-2 -top-5
+// .content-head
+//   @apply md:mt-4 lg:mt-8 text-3xl text-center sm:text-left lg:text-5xl font-semibold
+.content-bot
+  @apply w-full lg:w-3/4 text-sm text-center sm:text-left justify-self-end
+
+.right-text
+  @apply relative justify-self-center md:justify-self-end items-center md:w-1/2 lg:w-5/6 bg-base-100 bg-opacity-90 text-base-content rounded-xl text-center md:mr-12 lg:mr-0
+.form-list
+  @apply grid grid-cols-2 gap-2
+  &-item
+    @apply flex flex-col
+    &__nums
+      @apply text-lg font-bold text-accent
+
+@media (min-width: 1024px) and (max-width: 1280px)
+  .header-img
+    left: 48.5%
+    top: 56.5%
+    transform: translate(-50%, -50%)
+    @apply absolute z-10
+
+@media (min-width: 768px) and (max-width: 1023px)
+  .header
+    background-position: 65%, 50%
+    @apply bg-no-repeat
+
+  .header-img
+    left: 23%
+    top: 62.4%
+    transform: translate(-50%, -50%)
+    width: 475px
+    @apply absolute z-10

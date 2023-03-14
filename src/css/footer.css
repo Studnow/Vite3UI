@@ -1,0 +1,78 @@
+.foot {
+  background-image: url(/assets/img/footer/Footer-bg.png);
+  @apply p-10 bg-accent bg-no-repeat bg-cover text-base-100 flex flex-col gap-8;
+}
+
+.navbar-bot {
+  @apply navbar flex-col md:flex-row gap-6;
+}
+
+.nav-link {
+  @apply flex gap-4 items-center hover:scale-125 transition duration-300;
+}
+
+.creditor-list {
+  /* @apply flex flex-col; */
+}
+
+.footer-title-sm {
+  @apply mb-4;
+}
+
+.list-item {
+  /* @apply ; */
+}
+
+.footer-md {
+  @apply grid lg:grid-flow-col gap-4;
+}
+
+.footer-md__cards {
+  @apply flex flex-col md:flex-row items-center justify-between border-t border-b max-w-xl;
+}
+
+.footer-md__images {
+  @apply flex items-center bg-base-200 bg-opacity-80 py-2 rounded-2xl;
+}
+.wallet-img {
+  @apply w-20 md:w-full hover:scale-125 transition duration-300;
+}
+
+.footer-md__text {
+  @apply flex flex-col lg:flex-col xl:flex-row gap-2 items-center justify-center text-xl text-center border-2 border-base-200 px-4 py-8;
+}
+
+.footer-md__link {
+  @apply underline hover:no-underline;
+}
+
+.footer-conditions {
+  @apply flex flex-col;
+}
+
+.footer-bot-text {
+  @apply mb-4;
+}
+
+.footer-bot {
+  @apply flex flex-col lg:flex-row gap-8 lg:justify-between;
+}
+
+.copy {
+  @apply flex flex-col md:flex-row items-center gap-6;
+}
+
+.age-icon {
+  @apply hover:scale-125 transition duration-300;
+}
+
+.copy-text {
+  @apply text-xl;
+}
+
+.socials {
+  @apply flex items-center justify-center gap-4 md:gap-12 w-full xl:w-2/4;
+}
+.social-link {
+  @apply inline-flex items-center hover:text-neutral;
+}

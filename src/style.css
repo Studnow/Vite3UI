@@ -1,15 +1,27 @@
+@import url(./css/ranje.css);
+@import url(./css/offer.css);
+@import url(./css/ways.css);
+@import url(./css/advantages.css);
+@import url(./css/clients.css);
+@import url(./css/about.css);
+@import url(./css/faq.css);
+@import url(./css/get.css);
+@import url(./css/footer.css);
+@import url(./css/typography.css);
+/* @import url(./sass/mixins.sass); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,84 +30,46 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+html,
 body {
+  font-family: Rubik;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
 }
 
 h1 {
-  font-size: 3.2em;
+  /* font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 600; */
 }
 
-#app {
-  max-width: 1280px;
+#app,
+.app {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.content {
+  flex: 1 1 auto;
+  position: relative;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.menu__link {
+  @apply text-base-100;
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.common-button {
+  /* background: rgb(2, 0, 36); */
+  background: linear-gradient(90deg, rgba(255, 200, 62, 1) 0%, rgba(255, 200, 62, 1) 0%, rgba(255, 115, 71, 1) 100%);
+  @apply btn btn-accent btn-lg sm:btn-lg;
 }
-
-.card {
-  padding: 2em;
+.cards {
+  @apply flex flex-col gap-4 lg:flex-row justify-between md:gap-4 lg:gap-14 max-w-screen-xl;
 }
-
-.read-the-docs {
-  color: #f30b0b;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
+  @apply container mx-auto;
+} */
+.text-mid {
+  @apply text-xl sm:text-2xl text-center sm:text-left lg:w-3/4 xl:w-full;
 }
