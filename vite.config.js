@@ -12,7 +12,7 @@ function handlebarsOverride(options) {
 }
 
 export default defineConfig({
-  base: "./Vite3UI/",
+  base: "/Vite3UI/",
   build: {
     outDir: "Vite3UI"
   },
