@@ -87,6 +87,7 @@
             <div class="credit-sum">
               <p class="form-range-top">Сумма кредита</p>
               <div class="range-sum" style="--min: 0; --max: 100; --val: 65">
+                <label for="money-range" aria-label="диапазон суммы кредита"></label>
                 <input class="w-full" id="money-range" type="range" max="100" value="65" />
                 <output class="text-output" for="money-range">65 000 ₮</output>
               </div>
@@ -94,6 +95,7 @@
             <div class="credit-term">
               <p class="form-range-bot">Срок кредита</p>
               <div class="range-sum" style="--min: 1; --max: 30; --val: 8">
+                <label for="term-range" aria-label="диапазон срока возврата кредита"></label>
                 <input class="w-full" id="term-range" type="range" max="30" value="8" />
                 <output class="text-output" for="term-range">8 дней</output>
               </div>
@@ -486,11 +488,16 @@
                 </p>
                 <div class="avatar-rating">
                   <div class="rating">
-                    <input type="radio" name="rating-1" class="mask mask-star bg-accent" />
-                    <input type="radio" name="rating-1" class="mask mask-star bg-accent" checked />
-                    <input type="radio" name="rating-1" class="mask mask-star bg-accent" />
-                    <input type="radio" name="rating-1" class="mask mask-star bg-accent" />
-                    <input type="radio" name="rating-1" class="mask mask-star bg-accent" />
+                    <label for="score1" aria-label="Оценка 1"></label>
+                    <input type="radio" id="score1" name="rating-1" class="mask mask-star bg-accent" />
+                    <label for="score2" aria-label="Оценка 2"></label>
+                    <input type="radio" id="score2" name="rating-1" class="mask mask-star bg-accent" checked />
+                    <label for="score3" aria-label="Оценка 3"></label>
+                    <input type="radio" id="score3" name="rating-1" class="mask mask-star bg-accent" />
+                    <label for="score4" aria-label="Оценка 4"></label>
+                    <input type="radio" id="score4" name="rating-1" class="mask mask-star bg-accent" />
+                    <label for="score5" aria-label="Оценка 5"></label>
+                    <input type="radio" id="score5" name="rating-1" class="mask mask-star bg-accent" />
                   </div>
                 </div>
               </div>
