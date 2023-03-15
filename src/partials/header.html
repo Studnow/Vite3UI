@@ -53,11 +53,11 @@
     <div class="header-text right-text">
       <div class="credit-sum">
         <p class="form-range-top">Сумма кредита</p>
-        {{>range id="money-range" min="0" max="100" val="65" output="65 000 ₮"}}
+        {{>range id="money-range" min="0" max="100" val="65" output="65 000 ₮" rangeLabel="диапазон суммы кредита"}}
       </div>
       <div class="credit-term">
         <p class="form-range-bot">Срок кредита</p>
-        {{>range id="term-range" min="1" max="30" val="8" output="8 дней"}}
+        {{>range id="term-range" min="1" max="30" val="8" output="8 дней" rangeLabel="диапазон срока возврата кредита"}}
       </div>
       <button class="common-button">Оформить заявку</button>
       <div class="list-wrapper">
