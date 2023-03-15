@@ -1,5 +1,5 @@
 .clients {
-  background: url(/assets/img/clients/clients-bg.png);
+  background: url(/assets/img/clients/clients-bg.webp);
   @apply flex flex-col py-12 gap-12 items-center;
 }
 .clients-cards {

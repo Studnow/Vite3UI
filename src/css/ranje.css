@@ -4,6 +4,3 @@
 .range-sum {
   @apply relative w-full flex flex-col-reverse items-center z-20 text-lg font-bold;
 }
-.credit-sum, .credit-term {
-  @apply flex flex-col text-left justify-between min-h-fit gap-8 text-xl;
-}

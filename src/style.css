@@ -62,7 +62,7 @@ h1 {
 .common-button {
   /* background: rgb(2, 0, 36); */
   background: linear-gradient(90deg, rgba(255, 200, 62, 1) 0%, rgba(255, 200, 62, 1) 0%, rgba(255, 115, 71, 1) 100%);
-  @apply btn btn-accent btn-lg sm:btn-lg;
+  @apply btn btn-accent;
 }
 .cards {
   @apply flex flex-col gap-4 lg:flex-row justify-between md:gap-4 lg:gap-14 max-w-screen-xl;
