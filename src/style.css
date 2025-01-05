@@ -1,18 +1,16 @@
-@import url(./css/ranje.css);
-@import url(./css/offer.css);
-@import url(./css/ways.css);
-@import url(./css/advantages.css);
-@import url(./css/clients.css);
-@import url(./css/about.css);
-@import url(./css/faq.css);
 @import url(./css/get.css);
-@import url(./css/footer.css);
-@import url(./css/typography.css);
+/* @import url(./css/typography.css); */
 /* @import url(./sass/mixins.sass); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  .responsive-container {
+    @apply max-w-screen-xl mx-auto bg-base-200 p-10;
+  }
+}
 
 :root {
   font-family: Rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -52,24 +50,28 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.content {
+.main {
   flex: 1 1 auto;
   position: relative;
 }
-.menu__link {
+
+.grid-card-3 {
+  @apply grid grid-cols-3 gap-4;
+}
+/* .menu__link {
   @apply text-base-100;
-}
-.common-button {
+} */
+/* .common-button { */
   /* background: rgb(2, 0, 36); */
-  background: linear-gradient(90deg, rgba(255, 200, 62, 1) 0%, rgba(255, 200, 62, 1) 0%, rgba(255, 115, 71, 1) 100%);
-  @apply btn btn-accent;
-}
-.cards {
+  /* background: linear-gradient(90deg, rgba(255, 200, 62, 1) 0%, rgba(255, 200, 62, 1) 0%, rgba(255, 115, 71, 1) 100%);
+  @apply btn btn-accent; */
+/* } */
+/* .cards {
   @apply flex flex-col gap-4 lg:flex-row justify-between md:gap-4 lg:gap-14 max-w-screen-xl;
-}
+} */
 /* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
   @apply container mx-auto;
 } */
-.text-mid {
+/* .text-mid {
   @apply text-xl sm:text-2xl text-center sm:text-left lg:w-3/4 xl:w-full;
-}
+} */

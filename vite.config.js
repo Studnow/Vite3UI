@@ -12,16 +12,16 @@ function handlebarsOverride(options) {
 }
 
 export default defineConfig({
-  base: "/Vite3UI/",
+  base: "/ViteUI/",
   build: {
-    outDir: "Vite3UI"
+    outDir: "ViteUI",
   },
   plugins: [
     handlebarsOverride({
       context: {
         title: "Handlebars",
       },
-      partialDirectory: resolve(__dirname, "./src/partials"),
+      partialDirectory: [resolve(__dirname, "./src/partials"), resolve(__dirname, "./src/partials/block-templates"), resolve(__dirname, "./src/partials/exp-templates")],
     }),
     // handlebars({}),
   ],

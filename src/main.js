@@ -1,35 +1,43 @@
 import "./style.css";
-import "./sass/range-mixin.sass";
-import "./sass/header.sass";
+import "@splidejs/splide/css";
+// import "./sass/header.sass";
 
-const _R = document.querySelectorAll("[type=range]"),
-  _W = _R.parentNode,
-  _O = _R.nextElementSibling;
+import Splide from "@splidejs/splide";
 
-document.documentElement.classList.add("js");
+new Splide(".splide", {
+  perPage: 3,
+}).mount();
 
-for (let i = 0; i < _R.length; i++) {
-  _R[i].addEventListener(
-    "input",
-    (e) => {
-      if (e.target.id == "money-range") {
-        e.currentTarget.style.setProperty("--val", +e.currentTarget.value);
-        e.currentTarget.nextElementSibling.value =
-          (e.currentTarget.value * 1000).toString().slice(0, 2) +
-          " " +
-          (e.currentTarget.value * 1000).toString().slice(2, 5) +
-          " ₮";
-        e.currentTarget.parentNode.style.setProperty("--val", +e.currentTarget.value);
-      }
-      if (e.target.id == "term-range") {
-        e.currentTarget.style.setProperty("--val", +e.currentTarget.value);
-        e.currentTarget.nextElementSibling.value = e.currentTarget.value + " дней";
-        e.currentTarget.parentNode.style.setProperty("--val", +e.currentTarget.value);
-      }
-    },
-    false
-  );
-}
+// Range function
+
+// const _R = document.querySelectorAll("[type=range]"),
+//   _W = _R.parentNode,
+//   _O = _R.nextElementSibling;
+
+// document.documentElement.classList.add("js");
+
+// for (let i = 0; i < _R.length; i++) {
+//   _R[i].addEventListener(
+//     "input",
+//     (e) => {
+//       if (e.target.id == "money-range") {
+//         e.currentTarget.style.setProperty("--val", +e.currentTarget.value);
+//         e.currentTarget.nextElementSibling.value =
+//           (e.currentTarget.value * 1000).toString().slice(0, 2) +
+//           " " +
+//           (e.currentTarget.value * 1000).toString().slice(2, 5) +
+//           " ₮";
+//         e.currentTarget.parentNode.style.setProperty("--val", +e.currentTarget.value);
+//       }
+//       if (e.target.id == "term-range") {
+//         e.currentTarget.style.setProperty("--val", +e.currentTarget.value);
+//         e.currentTarget.nextElementSibling.value = e.currentTarget.value + " дней";
+//         e.currentTarget.parentNode.style.setProperty("--val", +e.currentTarget.value);
+//       }
+//     },
+//     false
+//   );
+// }
 
 // _R.addEventListener(
 //   "input",
