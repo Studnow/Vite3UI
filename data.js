@@ -1,4 +1,4 @@
-const contextData = {
+export const contextData = {
   "/index.html": {
     title: "Main Page",
     images: ["/assets/img/top/bg/waterfall.png"],
