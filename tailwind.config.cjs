@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/partials/*.html", "src/sass/*.sass", "src/css/*.css", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/partials/**/*.html", "src/sass/*.sass", "src/css/*.css", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-clear': "url('/assets/img/hero/Hero-clear.webp')"
+      }
+    },
   },
   daisyui: {
-    themes: [
+    themes: ["light",
       {
         mytheme: {
           primary: "#FFC83E",
