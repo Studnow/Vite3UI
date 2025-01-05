@@ -14,9 +14,9 @@ function handlebarsOverride(options) {
 }
 
 export default defineConfig({
-  base: "ViteUI", // for deploy to gh-pages base = outDir
+  base: "Vite3UI", // for deploy to gh-pages base = outDir
   build: {
-    outDir: "ViteUI",
+    outDir: "Vite3UI",
   },
   plugins: [
     handlebarsOverride({
