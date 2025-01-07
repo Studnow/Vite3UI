@@ -2,9 +2,6 @@ import { defineConfig } from "vite";
 
 import handlebars from "vite-plugin-handlebars";
 import { resolve } from "path";
-// import { imagetools } from "vite-imagetools";
-import svgSprite from "vite-plugin-svg-sprite";
-// import imagemin from "vite-plugin-imagemin";
 import viteImagemin from "@vheemstra/vite-plugin-imagemin";
 import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminPngquant from "imagemin-pngquant";
@@ -27,6 +24,7 @@ export default defineConfig({
   build: {
     outDir: "Vite3UI",
     rollupOptions: {
+      input: "index.html",
       external: ["/data.js"],
       output: {
         assetFileNames: ({ name }) => {
@@ -52,12 +50,7 @@ export default defineConfig({
         resolve(__dirname, "./src/partials/exp-templates"),
       ],
     }),
-    // handlebars({}),
-    // imagetools(),
-    svgSprite({
-      symbolId: "icon-[name]",
-      include: ["./assets/icons/**/*.svg"],
-    }),
+    handlebars({}),
     process.env.NODE_ENV === "production" &&
       viteImagemin({
         onlyAssets: true,
@@ -78,26 +71,6 @@ export default defineConfig({
             gif: imageminWebp(),
           },
         },
-        // Убираем лишние метаданные, сжимаем изображения
-        // pngquant: {
-        //   quality: [0.6, 0.8], // Устанавливаем качество PNG
-        // },
-        // mozjpeg: {
-        //   quality: 75, // Устанавливаем качество для JPEG
-        // },
-        // webp: {
-        //   quality: 50, // Устанавливаем качество для WebP
-        // method: 6,
-        // Для PNG/JPEG/AVIF
-        // filter: ["image/jpeg", "image/png"],
-        // },
-        // gifsicle: {
-        //   optimizationLevel: 3, // Уровень сжатия для GIF
-        // },
-        // svgo: {
-        //   plugins: [{ removeViewBox: false }], // Убираем некорректные viewBox из SVG
-        // },
       }),
-    // imagetools(),
   ].filter(Boolean),
 });

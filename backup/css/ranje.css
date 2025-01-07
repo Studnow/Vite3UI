@@ -1,6 +1,0 @@
-.hspan {
-  @apply text-accent text-xl bg-secondary;
-}
-.range-sum {
-  @apply relative w-full flex flex-col-reverse items-center z-20 text-lg font-bold;
-}
