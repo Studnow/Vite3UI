@@ -1,19 +1,47 @@
-<div class="content mb-4">
-  <div class="container mx-auto mb-4">{{>hero}}</div>
-  <div class="container mx-auto mb-4 grid grid-card-3">
-    {{>card}}
-    {{>card}}
-    {{>card}}
-    {{>card}}
-    {{>card}}
-  </div>
-  <div class="container mx-auto mb-4">
-    {{>picture}}
-  </div>
-  <div class="container mx-auto mb-4">
+<div class="content mb-4 w-full">
+  <section class="container mx-auto mb-4">{{>hero}}</section>
+  <section class="container mx-auto mb-4 ">
+    {{>section-title section=sections.cards}}
+    <div class="cards grid grid-card-3">
+      {{>card card=images.cardImg}}
+      {{>card card=images.cardImg}}
+      {{>card card=images.cardImg}}
+      {{>card card=images.cardImg}}
+      {{>card card=images.cardImg}}
+    </div>
+  </section>
+  <section class="container mx-auto mb-4 grid grid-flow-row justify-center ">
+    {{>section-title section=sections.about}}
+    {{>picture image=images.aboutImg}}
+  </section>
+  <section class="container mx-auto mb-4 }">
+    {{>section-title section=sections.slider}}
     {{>splide-slider}}
-  </div>
-  <div class="container mx-auto mb-4">
-    {{>list items=list.items}} <!-- first arg = partial, second = name arg in partial + data key -->
-  </div>
+  </section>
+  <section class="container mx-auto mb-4 ">
+    {{>section-title section=sections.price}}
+    <div class="cards flex justify-between">
+      <div class="card">
+        <div class="card-body">
+          <ul class="card-list">
+            {{>list items=list.items name=sections.price.card.basic}} <!-- first arg = partial, second = name arg in partial + data key -->
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <ul class="card-list">
+            {{>list items=list.items name=sections.price.card.standart}} <!-- first arg = partial, second = name arg in partial + data key -->
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <ul class="card-list">
+            {{>list items=list.items name=sections.price.card.pro}} <!-- first arg = partial, second = name arg in partial + data key -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
