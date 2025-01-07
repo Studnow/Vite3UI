@@ -1,7 +1,12 @@
 export const contextData = {
   "/index.html": {
     title: "Main Page",
-    images: ["/assets/img/top/bg/waterfall.png"],
+    images: {
+      heroImg: { alt: "Главный экран", path: "/assets/img/Hero-bg.jpg" },
+      aboutImg: { alt: "О нас", path: "/assets/img/handshake.webp" },
+      cardImg: { alt: "Card image", class: "rounded-lg", path: "/assets/img/0e.gif" },
+      slideImg: { alt: "Slide image", class: "rounded-lg", path: "/assets/img/waterfall.png" },
+    },
     list: {
       items: [
         {
@@ -17,6 +22,52 @@ export const contextData = {
           text: "Third Item",
         },
       ],
+    },
+    form: {
+      fields: {
+        Email: true,
+        Name: true,
+        button: true,
+        check: true,
+        radio: false,
+        select: true,
+        file: false,
+        range: false,
+        rating: true,
+        text: false,
+        textArea: false,
+        toggle: false,
+      },
+    },
+    sections: {
+      hero: { class: "", title: "This is hero section", description: "Fish plain text should be here" },
+      cards: {
+        class: "",
+        title: "Card section",
+        description: "You can buy all of these cards",
+      },
+      about: {
+        class: "grid grid-cols-1 justify-center",
+        title: "We are the champions",
+        description: "Around the world",
+      },
+      slider: {
+        class: "",
+        title: "Testimonials",
+        description: "All our clients",
+      },
+      price: {
+        class: "",
+        title: "Prices",
+        description: "Get the best plan",
+        card: { basic: "basic", standart: "standart", pro: "pro" },
+      },
+    },
+    elements: {
+      button: {
+        class: "btn btn-primary",
+        text: "Buy now",
+      },
     },
   },
 };

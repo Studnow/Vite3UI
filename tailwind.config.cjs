@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/partials/**/*.html", "src/sass/*.sass", "src/css/*.css", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       backgroundImage: {
         'hero-clear': "url('/assets/img/hero/Hero-clear.webp')"
       }

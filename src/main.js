@@ -4,9 +4,27 @@ import "@splidejs/splide/css";
 
 import Splide from "@splidejs/splide";
 
+// img
+// import { contextData } from "../data";
+// import heroBg from '/assets/img/0e.gif'
+// import handshake from '/assets/img/handshake.webp'
+// const handshak = "/assets/img/handshake.webp"
+// export const images = contextData["/index.html"].images;
+// document.getElementById(`${images.cardImg.id}`).src = heroBg;
+// console.log(images.cardImg.id)
+
 new Splide(".splide", {
   perPage: 3,
 }).mount();
+
+document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+document.addEventListener("load", (e) => {
+  console.log(heroBg)
+})
 
 // Range function
 
