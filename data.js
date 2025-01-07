@@ -1,6 +1,11 @@
 export const contextData = {
   "/index.html": {
     title: "Main Page",
+    meta: {
+      title: "Название страницы",
+      description: "Описание страницы",
+      ogImage: "/assets/img/og-image.jpg",
+    },
     images: {
       heroImg: { alt: "Главный экран", path: "/assets/img/Hero-bg.jpg" },
       aboutImg: { alt: "О нас", path: "/assets/img/handshake.webp" },
@@ -30,34 +35,34 @@ export const contextData = {
         button: true,
         check: true,
         radio: false,
-        select: true,
+        select: false,
         file: false,
         range: false,
         rating: true,
         text: false,
         textArea: false,
-        toggle: false,
+        toggle: true,
       },
     },
     sections: {
-      hero: { class: "", title: "This is hero section", description: "Fish plain text should be here" },
-      cards: {
-        class: "",
+      heroSec: { class: "hero", title: "This is hero section", description: "Fish plain text should be here" },
+      cardsSec: {
+        class: "cards",
         title: "Card section",
         description: "You can buy all of these cards",
       },
-      about: {
-        class: "grid grid-cols-1 justify-center",
+      aboutSec: {
+        class: "about",
         title: "We are the champions",
         description: "Around the world",
       },
-      slider: {
-        class: "",
+      sliderSec: {
+        class: "slider",
         title: "Testimonials",
         description: "All our clients",
       },
-      price: {
-        class: "",
+      priceSec: {
+        class: "price",
         title: "Prices",
         description: "Get the best plan",
         card: { basic: "basic", standart: "standart", pro: "pro" },
