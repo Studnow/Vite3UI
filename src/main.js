@@ -5,7 +5,7 @@ import "@splidejs/splide/css";
 import Splide from "@splidejs/splide";
 
 // img
-// import { contextData } from "../data";
+// import { contextData } from "../data/data";
 // import heroBg from '/assets/img/0e.gif'
 // import handshake from '/assets/img/handshake.webp'
 // const handshak = "/assets/img/handshake.webp"

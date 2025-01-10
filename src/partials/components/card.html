@@ -1,0 +1,26 @@
+{{#if items}}
+{{#each items}}
+<div class="card bg-base-100 w-96 shadow-xl rounded-lg">
+  {{>picture image=this.cardBImg}}
+  <div class="card-body">
+    <h2 class="card-title">{{cardBTitle}}</h2>
+    <p>{{items}}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{cardBBtn}}</button>
+    </div>
+  </div>
+</div>
+{{~/each}}
+{{else}}
+<div class="card bg-base-100 w-96 shadow-xl rounded-lg">
+  {{!-- {{>picture image=../images.placeholder.path}} --}}
+  <img src="/public/Placeholder.png" alt="">
+  <div class="card-body">
+    <h2 class="card-title">Заголовок по умолчанию</h2>
+    <p>Описание заглушки</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Перейти</button>
+    </div>
+  </div>
+</div>
+{{/if}}

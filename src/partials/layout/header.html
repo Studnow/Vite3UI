@@ -12,7 +12,9 @@
       <a class="btn btn-ghost text-xl bg-primary">{{>logo}}</a>
     </div>
     <div class="navbar-center hidden lg:flex">
+      {{#if showMenu}}
       {{>menu}}
+      {{/if}}
     </div>
     <div class="navbar-end">
       <a class="btn">Button</a>
