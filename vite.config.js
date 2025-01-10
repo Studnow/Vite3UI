@@ -9,7 +9,8 @@ import imageminGifsicle from "imagemin-gifsicle";
 import imageminSvgo from "imagemin-svgo";
 import imageminWebp from "imagemin-webp";
 
-import { contextData } from "./data";
+import { contextData } from "./data/data";
+import  Helpers from "./Hbs-helpers";
 
 function handlebarsOverride(options) {
   const plugin = handlebars(options);
@@ -46,8 +47,9 @@ export default defineConfig({
       },
       partialDirectory: [
         resolve(__dirname, "./src/partials"),
-        resolve(__dirname, "./src/partials/block-templates"),
-        resolve(__dirname, "./src/partials/exp-templates"),
+        resolve(__dirname, "./src/partials/layout"),
+        resolve(__dirname, "./src/partials/sections"),
+        resolve(__dirname, "./src/partials/components"),
       ],
     }),
     handlebars({}),
