@@ -1,0 +1,16 @@
+<ol class="{{class}} lg:justify-center">
+  {{#each list-items}}
+  <li class="flex gap-4 py-1">
+    {{#if link}}
+    <a class="{{class}} text-accent" href="{{href}}">
+      <span class="icon w-6 h-6">{{{icon}}}</span>
+      <span class="border-b-2 border-accent py-1 hidden md:block">{{text}}</span>
+    </a>
+    {{else}}
+    <span class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-white font-bold"> {{incrementedIndex @index}}
+    </span>
+    <span class="w-[80%]">{{this}}</span>
+    {{/if}}
+  </li>
+  {{/each}}
+</ol>

@@ -1,1 +1,14 @@
-<section class="{{sections.heroSec.class}} container mx-auto mb-4">{{>hero}}</section>
+<section class="container mx-auto">
+  <div class="{{class}}">
+    <div class="{{classContent}}">
+      <div class="mb-8 {{containerClass}}">
+
+        <h1 class="{{heading.class.title}}">{{heading.title}}</h1>
+        <p class="py-6 {{heading.class.description}}">
+          {{heading.description}}
+        </p>
+      </div>
+      {{>button button}}
+    </div>
+  </div>
+</section>

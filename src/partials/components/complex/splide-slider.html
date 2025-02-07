@@ -1,0 +1,20 @@
+  <div id="splide" class="splide">
+    {{#if sliderCommon.customControl}}
+    {{>sliderParts/customControl sliderCommon.customControl}}
+    {{/if}}
+    <div class="splide__track">
+      <ul class="splide__list">
+        {{#isArray slides.slideData}}
+        {{#each slides.slideData}}
+        {{!-- Можно переходить на уровень выше внутри #each, объект this = объекту вызванному в each --}}
+        <li class="splide__slide text-center">{{>slide common=../sliderCommon items=this}}</li>
+        {{~/each}}
+        {{else}}
+        {{#times slides}}
+        <li class="splide__slide text-center">{{>card items=null}}
+        </li>
+        {{~/times}}
+        {{/isArray}}
+      </ul>
+    </div>
+  </div>

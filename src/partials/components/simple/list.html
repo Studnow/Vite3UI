@@ -1,0 +1,17 @@
+<ul class="{{class}}">
+  {{#each list-items}}
+  <li>
+    {{#if link}}
+    <a class="{{class}}" href="{{href}}">
+      <span class="{{containerClass}}"><svg class="{{iconClass}}" width="{{icon.w}}" height="{{icon.h}}"
+          viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="/__spritemap#sprite-{{icon.id}}"></use>
+        </svg></span>
+      <span class="{{span.class}}">{{span.text}}</span>
+    </a>
+    {{else}}
+    {{this}}
+    {{/if}}
+  </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,15 @@
+.splide__arrow {
+  @apply !bg-primary md:!w-14 md:!h-14;
+}
+.splide__arrow svg {
+  @apply md:!w-10 md:!h-10;
+}
+.splide__arrow--prev {
+  @apply !-left-4 md:!-left-6;
+}
+.splide__arrow--next {
+  @apply !-right-4 md:!-right-6;
+}
+.card .btn svg {
+  @apply text-base-100 hover:!text-secondary transition-all ease-in-out duration-75;
+}

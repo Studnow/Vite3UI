@@ -1,0 +1,7 @@
+<picture class="{{image.class}}">
+  {{#if image.modern}}
+  <source type="image/png" srcset="{{image.modern}}" alt="{{image.title}}" />
+   {{/if}}
+  <img src="{{image.path}}" {{#if image.w}}width="{{image.w}}" {{/if}} {{#if image.h}}height="{{image.h}}" {{/if}}
+    alt="{{image.title}}" loading="lazy" />
+</picture>

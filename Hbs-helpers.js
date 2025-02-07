@@ -19,15 +19,19 @@ Handlebars.registerHelper('isArray', function (value, options) {
   }
 });
 
-function generateCards(count) {
+export function generateCards(count) {
   return Array.from({ length: count }, (_, i) => ({
     title: `Card ${i + 1}`,
     desc: `Description for card ${i + 1}`,
-    img: `/img/card${i + 1}.jpg`,
+    img: `/Placeholder.png`,
+    btn: `Don't press it!`
   }));
 }
 
-export const cards = generateCards(10); // Генерация 10 карточек - тестовые данные для проверки наполнения компонентов контентом
+// export const cards = generateCards(10); // Генерация 10 карточек - тестовые данные для проверки наполнения компонентов контентом
 
+Handlebars.registerHelper("incrementedIndex", function (index) {
+  return index + 1;
+});
 
 export default Handlebars;

@@ -1,0 +1,55 @@
+{{#if items}}
+{{#each items}}
+<div class="card {{cardClass}}">
+  {{#if cardPicture}}
+  <figure>
+    {{>picture image=cardImg}}
+  </figure>
+  {{/if}}
+  <div class="card-body h-full">
+    {{#if cardHeading.title}}
+    <h3 class="{{cardHeading.class.classTitle}}">{{cardHeading.title}}</h3>
+    {{/if}}
+    {{#if cardHeading.description}}
+    <p class="{{cardHeading.class.classDesc}}">{{cardHeading.description}}</p>
+    {{/if}}
+    {{#if cardActions}}
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{cardBtn}}</button>
+    </div>
+    {{/if}}
+  </div>
+</div>
+{{~/each}}
+{{#isArray generate}}
+{{#each generate}}
+<div class="card bg-base-100 w-96 shadow-xl rounded-lg">
+  {{!-- {{>picture image=../images.placeholder.path}} --}}
+  <img src="{{img}}" alt="">
+  <div class="card-body">
+    <h2 class="card-title">{{title}}</h2>
+    <p>{{desc}}</p>
+    {{#if cardActions}}
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{btn}}</button>
+    </div>
+    {{/if}}
+  </div>
+</div>
+{{/each}}
+{{/isArray}}
+{{else}}
+<div class="card bg-base-100 w-96 shadow-xl rounded-lg">
+  {{!-- {{>picture image=../images.placeholder.path}} --}}
+  <img src="/Placeholder.png" alt="">
+  <div class="card-body">
+    <h2 class="card-title">Заголовок по умолчанию</h2>
+    <p>Описание заглушки</p>
+    {{#if cardActions}}
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Перейти</button>
+    </div>
+    {{/if}}
+  </div>
+</div>
+{{/if}}

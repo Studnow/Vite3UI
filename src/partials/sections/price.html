@@ -1,14 +1,15 @@
-<section class="{{this.class}} container mx-auto mb-4">
-  {{>section-title section=this}}
-  <div class="cards flex justify-between">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="text-green-300">{{priceList.list.title}}</h3>
-        {{#generateCards}}
-        {{>list items=priceList.list.listItems}}
-        {{~/generateCards}}
-        <!-- first arg = partial, second = name arg in partial + data key -->
-      </div>
+<section class="{{class}}">
+  {{>section-title heading}}
+  <div class="{{content.class}}">
+    <div class="{{content.col1}}">
+      {{#each buttons}}
+      <button class="{{class}}">{{text}}</button>
+      {{/each}}
     </div>
+    <div class="{{content.col2}}">
+      {{>picture image=img}}
+    </div>
+    {{#if priceList}}
+    {{/if}}
   </div>
 </section>

@@ -1,0 +1,20 @@
+<footer class="footer bg-base-100 text-center place-items-center text-base-content p-10">
+<aside class="flex gap-4">
+  {{#each social}}
+  <a href="{{href}}" class="link">
+    <img src="{{icon}}" alt="">
+  </a>
+  {{/each}}
+</aside>
+<p>
+  {{#each business}}
+  <span class="link link-hover">{{this}}</span>
+  {{/each}}
+</p>
+<nav class="flex flex-col items-center">
+  {{#each policy}}
+  <a class="link link-hover">{{this}}</a>
+  {{/each}}
+  <a href="{{href}}" class="link no-underline flex items-center">{{>logo logo=logo}}</a>
+</nav>
+</footer>

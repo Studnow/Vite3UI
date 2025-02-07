@@ -1,0 +1,24 @@
+<header class="header {{navbar.headerClass}}">
+  <div class="container {{navbar.containerClass}}">
+    <div class="navbar {{navbar.navbarClass}}">
+      <div class="navbar-start {{navbar.navbarStart}}">
+        {{#if center.components.showMenu}}
+        {{>dropdown}}
+        {{/if}}
+        {{>logo}}
+      </div>
+      <div class="navbar-center {{navbar.navbarCenter}}">
+        {{#if center.components.showMenu}}
+        {{>menu menu}}
+        {{/if}}
+        {{#if center.components.showContacts}}
+        {{>list center.list}}
+        {{/if}}
+      </div>
+      <div class="navbar-end {{navbar.navbarEend}}">
+        <a
+          class="{{right.class}}">{{right.text}}</a>
+      </div>
+    </div>
+  </div>
+</header>

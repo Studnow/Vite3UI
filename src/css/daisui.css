@@ -1,0 +1,13 @@
+/* .menu li>*:not(ul):not(.menu-title):not(details):active {
+  @apply bg-primary;
+}
+.menu li>*:not(ul, .menu-title, details, .btn):active,
+.menu li>details>summary:active {
+  @apply bg-primary;
+} */
+
+/* Remove btn click scale animation */
+
+/* .btn {
+  @apply active:hover:!scale-95;
+} */
