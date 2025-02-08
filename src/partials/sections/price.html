@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <section class="{{class}}">
   {{>section-title heading}}
   <div class="{{content.class}}">
@@ -13,24 +11,5 @@
     </div>
     {{#if priceList}}
     {{/if}}
-=======
-=======
->>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
-<section class="{{this.class}} container mx-auto mb-4">
-  {{>section-title section=this}}
-  <div class="cards flex justify-between">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="text-green-300">{{priceList.list.title}}</h3>
-        {{#generateCards}}
-        {{>list items=priceList.list.listItems}}
-        {{~/generateCards}}
-        <!-- first arg = partial, second = name arg in partial + data key -->
-      </div>
-    </div>
-<<<<<<< HEAD
->>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
-=======
->>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
   </div>
 </section>

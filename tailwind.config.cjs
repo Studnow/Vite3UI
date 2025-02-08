@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-<<<<<<< HEAD
   // purge: ["./src/**/**/*.html", "./src/**/*.js"],
   content: [
     "./index.html",
@@ -31,21 +30,6 @@ module.exports = {
   daisyui: {
     themes: [
       "light",
-=======
-  content: ["./index.html", "./src/partials/**/*.html", "src/sass/*.sass", "src/css/*.css", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-      },
-      backgroundImage: {
-        'hero-clear': "url('/assets/img/hero/Hero-clear.webp')"
-      }
-    },
-  },
-  daisyui: {
-    themes: ["light",
->>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
       {
         mytheme: {
           ...require("daisyui/src/theming/themes")["mytheme"],
