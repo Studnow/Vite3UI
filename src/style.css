@@ -50,7 +50,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
 .main {
   flex: 1 1 auto;
   position: relative;

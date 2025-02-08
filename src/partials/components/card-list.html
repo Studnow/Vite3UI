@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div
   class="container mx-auto card-list max-w-screen-sm lg:max-w-screen-2xl flex flex-col lg:flex-row justify-center gap-6 mb-4">
   {{#if items}}
@@ -30,3 +31,32 @@
   </div>
   {{/if}}
 </div>
+=======
+{{#if items}}
+{{#each items}}
+<div class="card bg-base-100 w-96 shadow-xl rounded-lg">
+  {{>picture image=this.cardBImg}}
+  <div class="card-body">
+    <h2 class="card-title">{{cardBTitle}}</h2>
+    <p>{{items}}</p>
+    {{>list listItems=listItems}}
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{cardBBtn}}</button>
+    </div>
+  </div>
+</div>
+{{~/each}}
+{{else}}
+<div class="card bg-base-100 w-96 shadow-xl rounded-lg">
+  {{!-- {{>picture image=../images.placeholder.path}} --}}
+  <img src="/public/Placeholder.png" alt="">
+  <div class="card-body">
+    <h2 class="card-title">Заголовок по умолчанию</h2>
+    <p>Описание заглушки</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Перейти</button>
+    </div>
+  </div>
+</div>
+{{/if}}
+>>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
