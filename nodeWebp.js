@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sharp from "sharp";
 import fg from "fast-glob";
 import path from "path";
@@ -61,3 +62,25 @@ processImages().catch((err) => console.error(err));
 // });
 
 // node images.js
+=======
+import imagemin from "imagemin";
+import imageminWebp from "imagemin-webp";
+
+imagemin(["./assets/img/**/*.{jpg,png}"], {
+  destination: "./assets/img/webp/",
+  plugins: [
+    imageminWebp({
+      //   quality: 90
+      //   ,
+      //   resize: {
+      //     width: 1000,
+      //     height: 0
+      //   }
+    }),
+  ],
+}).then(() => {
+  console.log("Images Converted Successfully!!!");
+});
+
+// node images.js
+>>>>>>> ce5ac4cf48bffe35d6e14888bcab3f693f2ce46e
