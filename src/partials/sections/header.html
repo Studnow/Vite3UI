@@ -1,13 +1,13 @@
-<header class="header {{navbar.headerClass}}">
-  <div class="container {{navbar.containerClass}}">
-    <div class="navbar {{navbar.navbarClass}}">
-      <div class="navbar-start {{navbar.navbarStart}}">
+<header class="header{{navbar.headerClass}}">
+  <div class="container{{navbar.containerClass}}">
+    <div class="navbar{{navbar.navbarClass}}">
+      <div class="navbar-start{{navbar.navbarStart}}">
         {{#if center.components.showMenu}}
-        {{>dropdown}}
+        {{>dropdown menu}}
         {{/if}}
         {{>logo}}
       </div>
-      <div class="navbar-center {{navbar.navbarCenter}}">
+      <div class="navbar-center{{navbar.navbarCenter}}">
         {{#if center.components.showMenu}}
         {{>menu menu}}
         {{/if}}
@@ -15,7 +15,7 @@
         {{>list center.list}}
         {{/if}}
       </div>
-      <div class="navbar-end {{navbar.navbarEend}}">
+      <div class="navbar-end{{navbar.navbarEnd}}">
         <a
           class="{{right.class}}">{{right.text}}</a>
       </div>

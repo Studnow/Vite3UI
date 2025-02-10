@@ -1,10 +1,11 @@
 export default {
+  containerClass: "footer bg-base-100 text-center place-items-center text-base-content p-10",
   logo: { img: "/logo.png", text: "Гид по недвижимости", class: "text-sm xl:text-base" },
   socialClass: "w-16 h-16",
   social: [
-    { title: "youtube", href: "#s", icon: "/assets/icons/social-icons/yt.svg" },
+    { title: "yt", href: "#s", icon: "/assets/icons/social-icons/yt.svg" },
     { title: "vk", href: "#s", icon: "/assets/icons/social-icons/vk.svg" },
-    { title: "instagram", href: "#s", icon: "/assets/icons/social-icons/instagram.svg" },
+    { title: "ig", href: "#s", icon: "/assets/icons/social-icons/instagram.svg" },
     { title: "fb", href: "#s", icon: "/assets/icons/social-icons/fb.svg" },
     { title: "tg", href: "#s", icon: "/assets/icons/social-icons/tg.svg" },
     { title: "ok", href: "#s", icon: "/assets/icons/social-icons/ok.svg" },

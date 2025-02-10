@@ -1,11 +1,11 @@
 export default {
   navbar: {
     headerClass: "",
-    containerClass: "mx-auto py-6",
-    navbarClass: "bg-transparent justify-between",
-    navbarStart: "w-1/6 lg:w-1/3",
-    navbarCenter: "flex w-1/2 lg:1/2 justify-center",
-    navbarEnd: "w-1/4 lg:w-1/4",
+    containerClass: " mx-auto py-6",
+    navbarClass: " bg-transparent justify-between",
+    navbarStart: " w-1/6 lg:w-1/3",
+    navbarCenter: " flex w-1/2 lg:1/2 justify-center",
+    navbarEnd: " w-1/4 lg:w-1/4",
   },
   logo: {
     containerClass:
