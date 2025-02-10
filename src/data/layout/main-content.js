@@ -1,3 +1,3 @@
 export default {
-  class: "mb-4 px-4 mx-auto",
+  class: "mb-4 px-6 mx-auto",
 };

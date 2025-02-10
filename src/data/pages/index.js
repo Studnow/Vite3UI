@@ -1,9 +1,9 @@
 // layout
 import basic from '../layout/basic';
+import mainContent from "../layout/main-content";
 
 // sections
 import header from "../sections/header";
-import mainContent from "../layout/main-content";
 import hero from "../sections/hero";
 import slider from "../sections/slider";
 import cards from "../sections/cards";
@@ -20,7 +20,7 @@ export default {
     ogImage: "/assets/img/og-image.jpg",
     ogUrl: "/",
   },
-  layout: { basic },
+  layout: { basic, mainContent },
   sections: {
     header,
     hero,
