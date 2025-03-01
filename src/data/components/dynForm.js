@@ -1,5 +1,6 @@
 export default {
   form: {
+    method: "",  // get, post, dialog (for close dialog, not submit)
     heading: {
       container: true,
       titleLevel: "3",

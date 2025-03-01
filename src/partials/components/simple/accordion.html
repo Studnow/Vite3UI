@@ -1,0 +1,8 @@
+{{>section-title heading}}
+{{#each items}}
+<div class="collapse bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-1" checked="checked" />
+  <div class="collapse-title font-semibold">{{title}}</div>
+  <div class="collapse-content text-sm">{{text}}</div>
+</div>
+{{/each}}

@@ -5,7 +5,7 @@ export default {
     titleLevel: 3,
     title: "price",
     description: "desc",
-    class: { container: "", title: "", description: "" },
+    class: { containerClass: "", title: "", description: "" },
   },
   content: {
     class: "gap-8 grid lg:grid-cols-2 place-items-center h-auto",
@@ -23,5 +23,9 @@ export default {
     },
     { text: "Заказать", class: "btn btn-accent btn-wide" },
   ],
-  img: { modern: "/assets/img/compressed/sale-img.webp", path: "/assets/img/compressed/sale-img.png", class: "bg-base-100 rounded-t-full" },
+  img: {
+    modern: "/assets/img/compressed/sale-img.webp",
+    path: "/assets/img/compressed/sale-img.png",
+    class: "bg-base-100 rounded-t-full",
+  },
 };

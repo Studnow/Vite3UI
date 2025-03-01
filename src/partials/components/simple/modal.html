@@ -1,0 +1,15 @@
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    {{>section-title heading}}
+    <div class="modal-body">
+      {{#if body.form}}
+      {{>dForm form=modalContent.form_2}}
+      {{/if}}
+    </div>
+    <div class="modal-action">
+      <button onclick="my_modal_1.close()" class="btn btn-primary">Close no form</button>
+    </div>
+  </div>
+</dialog>
