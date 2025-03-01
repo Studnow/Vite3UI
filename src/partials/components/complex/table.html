@@ -1,0 +1,24 @@
+<div class="overflow-x-auto">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        {{#each thead}}
+        <th>{{text}}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#each tbody}}
+      <tr>
+        {{#if th}}
+        <th>{{th}}</th>
+        {{/if}}
+        {{#each td}}
+        <td>{{this}}</td>
+        {{/each}}
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

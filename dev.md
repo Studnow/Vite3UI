@@ -2,12 +2,12 @@
 
 ## Component library
 
-- modal (work)-->base done
+- modal - base done
 - drawer
-- accordion base done
+- accordion - base done
 - carousel
 - countdown or countup
-- table
+- table - base done
 - timeline
 - pagination
 - steps
