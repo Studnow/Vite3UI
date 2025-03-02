@@ -1,0 +1,6 @@
+<div role="tablist" class="tabs tabs-bordered">
+  {{#each tabs}}
+  <input type="radio" name="{{../tabName}}" role="tab" class="tab" aria-label="{{tabLabel}}" {{checked}} />
+  <div role="tabpanel" class="tab-content p-10">{{content}}</div>
+  {{/each}}
+</div>
