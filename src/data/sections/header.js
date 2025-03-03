@@ -42,5 +42,6 @@ export default {
   right: {
     class: "btn btn-outline bg-base-100 text-xs md:text-base text-accent border-2 hover:bg-accent hover:border-accent",
     text: "Заказать звонок",
+    drawer: false,
   },
 };

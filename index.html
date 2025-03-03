@@ -25,10 +25,18 @@
 
 <body class="">
   <div id="app" class="app">
+    {{#if drawer.show}}
+    {{>drawer}}
+    {{else}}
+
+    {{!-- No drawer content--}}
+
     {{>modal modal modalContent=dynForm}}
     {{>header sections.header menu=menu}}
     {{>main}}
     {{>footer sections.footer}}
+
+    {{/if}}
   </div>
   <!-- # INSERT SCRIPT HERE -->
   <script type="module" defer src="/src/main.js"></script>

@@ -20,6 +20,7 @@ export default {
     ogImage: "/assets/img/og-image.jpg",
     ogUrl: "/",
   },
+  drawer: false,
   layout: { basic, mainContent },
   sections: {
     header,

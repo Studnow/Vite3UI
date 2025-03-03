@@ -3,7 +3,7 @@
 ## Component library
 
 - modal - base done
-- drawer
+- drawer - base done
 - accordion - base done
 - carousel
 - countdown or countup
@@ -11,7 +11,7 @@
 - timeline
 - pagination
 - steps
-- tab
+- tab - base done
 - skeleton
 - tooltip
 
