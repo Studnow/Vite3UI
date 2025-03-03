@@ -5,15 +5,16 @@
 - modal - base done
 - drawer - base done
 - accordion - base done
-- carousel
-- countdown or countup
+- carousel - base done
+- countdown or countup - base done
 - table - base done
-- timeline
-- pagination
-- steps
+- timeline - base done
+- pagination - base done
+- steps - base done
 - tab - base done
-- skeleton
-- tooltip
+- skeleton - base done
+- tooltip - base done
+- rating - base done
 
 ## Functions
 

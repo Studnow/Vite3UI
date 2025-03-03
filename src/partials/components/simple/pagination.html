@@ -1,0 +1,5 @@
+<div class="btn-group">
+  {{#each pages}}
+    <button class="btn {{#if (eq this.state "active")}}btn-active{{/if}}">{{this.number}}</button>
+  {{/each}}
+</div>

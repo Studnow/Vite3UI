@@ -1,0 +1,7 @@
+<div class="steps">
+  {{#each steps}}
+    <div class="step {{#if (eq this.state "completed")}}step-completed{{/if}} {{#if (eq this.state "current")}}step-current{{/if}}">
+      {{this.content}}
+    </div>
+  {{/each}}
+</div>

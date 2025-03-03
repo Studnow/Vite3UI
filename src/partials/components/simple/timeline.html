@@ -1,0 +1,11 @@
+<ul class="timeline">
+  {{#each events}}
+    <li class="timeline-item">
+      {{#unless @first}}<hr class="timeline-line" />{{/unless}}
+      <div class="timeline-start">{{{this.start}}}</div>
+      <div class="timeline-middle">{{{this.middle}}}</div>
+      <div class="timeline-end timeline-box">{{{this.end}}}</div>
+      {{#unless @last}}<hr class="timeline-line" />{{/unless}}
+    </li>
+  {{/each}}
+</ul>

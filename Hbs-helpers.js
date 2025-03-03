@@ -19,6 +19,10 @@ Handlebars.registerHelper('isArray', function (value, options) {
   }
 });
 
+Handlebars.registerHelper('eq', function(a, b) {
+  return a === b;
+});
+
 export function generateCards(count) {
   return Array.from({ length: count }, (_, i) => ({
     title: `Card ${i + 1}`,

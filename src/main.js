@@ -2,6 +2,7 @@ import "./style.css";
 import "@splidejs/splide/css";
 // import "./sass/header.sass";
 
+import "./js/counter"
 import Splide from "@splidejs/splide";
 
 new Splide(".splide", {

@@ -1,0 +1,5 @@
+<div class="rating">
+  {{#each ratings}}
+    <input type="radio" name="{{this.name}}" class="{{this.class}}" {{#if this.state}}checked{{/if}} />
+  {{/each}}
+</div>
